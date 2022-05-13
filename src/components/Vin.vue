@@ -3,7 +3,6 @@ import { parseVin } from '@/helpers/parse-vin';
 import type { DecodedVin } from '@/types/vin';
 import { computed, type ComputedRef } from '@vue/reactivity';
 import Card from './Card.vue';
-import VinForm from './VinForm.vue';
 
 const { vin } = defineProps<{ vin: string }>();
 
@@ -54,10 +53,6 @@ const parse = (v?: any) => {
                     <th>Trim:</th>
                     <td>{{ parse(decoded?.trim) }}</td>
                 </tr>
-                <!-- <tr>
-            <th>Check Digit:</th>
-            <td>{{ parse(decoded?.check_digit) }}</td>
-        </tr> -->
                 <tr>
                     <th>Model Year:</th>
                     <td>{{ parse(decoded?.model_year) }}</td>
