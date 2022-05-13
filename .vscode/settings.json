@@ -1,0 +1,19 @@
+{
+  "cSpell.words": [
+    "Drivetrains",
+    "GVWR",
+    "headlessui",
+    "heroicons",
+    "Rivian",
+    "rushstack",
+    "tailwindcss",
+    "typecheck",
+    "vite",
+    "vitejs",
+    "vitest"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
