@@ -4,7 +4,9 @@ import Vin from "./components/VinPage.vue";
 import Home from "./components/HomePage.vue";
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(
+    window.location.href.includes("github") ? "/rivian-vin-decoder/" : ""
+  ),
   routes: [
     {
       path: "/",
