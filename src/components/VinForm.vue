@@ -6,7 +6,7 @@
           type="vin"
           name="vin"
           id="vin"
-          class="focus:ring-indigo-500 bg-gray-50 focus:border-indigo-500 block w-full rounded-none rounded-l-md p-2 sm:text-sm border-gray-300"
+          class="bg-gray-50 block w-full rounded-none rounded-l-md p-2 sm:text-sm border border-gray-300 text-sm font-medium rounded-r-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
           placeholder="VIN"
           v-model="vinRef"
           v-on:keyup.enter="lookupVin"
