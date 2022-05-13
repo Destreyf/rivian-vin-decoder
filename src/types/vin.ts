@@ -9,7 +9,7 @@ export interface DecodedVin {
   motor_drivetrain: VinKeyValue;
   restraints: VinKeyValue;
   trim: VinKeyValue;
-  check_digit: any;
+  check_digit: string | number;
   model_year: VinKeyValue;
   manufacturing_plant: VinKeyValue;
   serial_number: string | number;
@@ -22,8 +22,19 @@ export interface RawVin {
   motor_drivetrain: string;
   restraints: string;
   trim: string;
-  check_digit: string;
+  check_digit: string | number;
   model_year: string;
   manufacturing_plant: string;
   serial_number: string;
+}
+
+export interface VehicleVinDefinition {
+  WMI: VinKeyValue;
+  ModelLineBodyStyle: VinKeyValue;
+  GVWRBrakeSystem: VinKeyValue;
+  EngineMotorDrivetrain: VinKeyValue;
+  Restraints: VinKeyValue;
+  Trim: VinKeyValue;
+  ModelYear: VinKeyValue;
+  ManufacturingPlant: VinKeyValue;
 }

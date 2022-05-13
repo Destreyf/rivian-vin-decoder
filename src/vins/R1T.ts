@@ -4,7 +4,6 @@ import { ModelYears } from "./common/model-years";
 import { EngineMotorDrivetrains } from "./common/motors";
 import { Trims } from "./common/trims";
 
-
 export const WMI: VinKeyValue = { "7FC": "Rivian, Vehicle Type: Truck" };
 
 export const ModelLineBodyStyle: VinKeyValue = {

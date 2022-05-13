@@ -42,7 +42,8 @@ export function parseVin(vin?: string): DecodedVin {
 
   return {
     wmi: details.WMI[raw.wmi],
-    model_line_body_style: details.ModelLineBodyStyle[raw.model_line_body_style],
+    model_line_body_style:
+      details.ModelLineBodyStyle[raw.model_line_body_style],
     gvwr_brake: details.GVWRBrakeSystem[raw.gvwr_brake],
     motor_drivetrain: details.EngineMotorDrivetrain[raw.motor_drivetrain],
     restraints: details.Restraints[raw.restraints],

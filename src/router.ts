@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import Vin from "./components/Vin.vue";
-import Home from "./components/Home.vue";
+import Vin from "./components/VinPage.vue";
+import Home from "./components/HomePage.vue";
 
 export const router = createRouter({
   history: createWebHistory(),
