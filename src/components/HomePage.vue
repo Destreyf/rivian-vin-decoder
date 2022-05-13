@@ -1,6 +1,8 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <CardContainer class="max-w-2xl mx-auto">
+  <CardContainer
+    class="max-w-2xl mx-auto h-full border-b grid place-content-center md:h-auto md:place-content-around"
+  >
     <div
       class="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
     >

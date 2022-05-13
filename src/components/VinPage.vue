@@ -16,7 +16,7 @@ const decoded: ComputedRef<DecodedVin | null> = computed(() => {
 
 const valid = computed(() => decoded.value && decoded.value?.wmi);
 
-const parse = (v?: string | null | undefined) => {
+const parse = (v?: string | number | null | undefined) => {
   if (!v) return "Unknown";
 
   if (Array.isArray(v)) return v.map((v) => v.toString()).join("\n");
@@ -76,7 +76,7 @@ const parse = (v?: string | null | undefined) => {
 <style lang="scss" scoped>
 td,
 th {
-  @apply p-4;
+  @apply p-2 sm:p-2 md:p-4;
 }
 
 th {
